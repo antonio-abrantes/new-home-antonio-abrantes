@@ -1,0 +1,110 @@
+@media all and (max-width: 991px) {
+  /* mobile css */
+  #baseCurveLarge {
+    display: none;
+  }
+  #baseCurve {
+    display: block;
+  }
+  .cover-photo-wrapper {
+    clip-path: url(#bannerCurve);
+    -webkit-clip-path: url(#bannerCurve);
+    z-index: 1;
+  }
+  .test {
+    background: blue;
+  }
+}
+
+@media all and (min-width: 991px) {
+  /* .cover-photo-wrapper {
+    background: linear-gradient(to right bottom, transparent 50%, #039be5 50%);
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    border-bottom: 6px solid #f0ffff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.12);
+  } */
+  #baseCurve {
+    display: none;
+  }
+  #baseCurveLarge {
+    display: block;
+  }
+  .cover-photo-wrapper {
+    clip-path: url(#bannerCurveLarge);
+    -webkit-clip-path: url(#bannerCurveLarge);
+    z-index: 1;
+  }
+  .test {
+    background: red;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .cover-photo-wrapper {
+    /* transform: skewY(-1deg); */
+  }
+}
+
+.cover-photo-wrapper .cover-photo-blurred-wrapper {
+  height: 174px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.cover-photo-wrapper .cover-photo-blurred-wrapper .cover-photo-blurred {
+  display: none;
+  height: 195px;
+  margin-left: -5%;
+  margin-top: -10px;
+  object-fit: cover;
+  width: 110%;
+}
+@media (min-width: 991px) {
+  .cover-photo-wrapper .cover-photo-blurred-wrapper .cover-photo-blurred {
+    display: block;
+    filter: blur(8px);
+    transform: scale(1.2);
+  }
+}
+.cover-photo-wrapper .cover-photo {
+  animation: animate-cover-photo 1s ease-in-out backwards;
+  height: 160px;
+  position: relative;
+}
+
+.cover-photo-wrapper .cover-photo img {
+  object-fit: cover;
+  width: 100%;
+}
+.cover-photo-wrapper .cover-photo.placeholder {
+  background: #e8ebea;
+  border: 1px dashed #979797;
+  box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@media (min-width: 991px) {
+  .cover-photo-wrapper {
+    /* clip-path: none;
+    -webkit-clip-path: none; */
+  }
+  .cover-photo-wrapper .cover-photo {
+    animation: none;
+    height: 174px;
+  }
+}
+
+@keyframes animate-cover-photo {
+  0% {
+    padding-bottom: 100px;
+    transform: scale(2);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    padding-bottom: 0;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,39 @@
+/* @import 'https://unpkg.com/normalize.css';
+@import 'https://unpkg.com/open-props/normalize.min.css';
+@import 'https://unpkg.com/open-props/open-props.min.css'; */
+
+:root {
+  /* --aspect-ratio: 4 / 1;
+  --header-scroll: calc(max(100vw / 4, 200px)); */
+/*   --header-scroll: 300px; */
+  /* --title-height: 100px;
+  --shared-range: calc((var(--header-scroll) - var(--title-height) )) calc((var(--header-scroll) + (var(--title-height) * 2)));
+  --cover-range: calc(var(--header-scroll) - (var(--title-height))) calc(var(--header-scroll) * 1);
+  --title-range: calc((var(--header-scroll) - (var(--title-height) * 2) )) calc((var(--header-scroll) - (var(--title-height) * -0.25)));
+  --avatar-range: calc((var(--header-scroll) - (var(--title-height) * 1.5) )) calc((var(--header-scroll) + (var(--title-height) * 0.95))),
+  	calc((var(--header-scroll) - (var(--title-height) * 2.5) )) calc((var(--header-scroll) + (var(--title-height) * 0.95)));
+  --shadow-range: calc((var(--header-scroll) + var(--title-height) )) calc((var(--header-scroll) + (var(--title-height) * 2))); */
+  /* --cover-range: var(--shadow-range); */
+}
+
+@keyframes ldio-c {
+  0% {
+    background: #b3d9f2;
+  }
+
+  25% {
+    background: #8ac7ec;
+  }
+
+  50% {
+    background: #68b4e6;
+  }
+
+  75% {
+    background: #3aa0e0;
+  }
+
+  100% {
+    background: #039be5;
+  }
+}

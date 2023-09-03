@@ -1,0 +1,110 @@
+main#main {
+  text-align: center;
+}
+
+/* .main-container {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.main-content {
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+  z-index: 10001;
+}
+
+.centered-content {
+  margin: 0 auto;
+  max-width: 991px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.no-cover-photo .profile-wrapper .picture-wrapper {
+  background: none;
+  margin-top: 0;
+}
+
+.profile-wrapper .picture-wrapper {
+  background: linear-gradient(180deg, #f9f9f9 0%, #f9f9f9 53%, transparent 53%);
+  display: inline-flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin-top: -80px;
+  width: 132px;
+  height: 132px;
+}
+@media (min-width: 991px) {
+  .profile-wrapper .picture-wrapper {
+    margin-top: -80px;
+  }
+}
+.profile-wrapper .picture-wrapper .picture {
+  animation: animate-profile-photo 0.8s 0.2s backwards;
+  display: inline-flex;
+  border-radius: 50%;
+  /* border: 6px solid #fff; */
+  border: 6px solid #f0ffff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  z-index: 10;
+}
+.profile-wrapper .picture-wrapper .picture img {
+  object-fit: cover;
+}
+.profile-wrapper .picture-wrapper .picture .placeholder {
+  background: #e8ebea;
+  border: 1px dashed #979797;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+}
+
+.name-bio-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  line-height: 16px;
+  /* text-transform: uppercase; */
+  white-space: pre-wrap;
+  margin-top: 2rem;
+  text-align: justify;
+  text-indent:3em
+}
+
+@media all and (max-width: 991px) {
+  .bio {
+    padding: 0 1rem 0 1rem;
+  }
+}
+
+@keyframes animate-profile-photo {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media all and (max-width: 810px) {
+}

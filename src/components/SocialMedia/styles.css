@@ -1,0 +1,26 @@
+
+
+.social-media-container {
+  margin-top: 0.6rem;
+  display: flex;
+}
+
+.social-media-container:hover{
+
+}
+
+.social-media-container a{
+  font-size: 1.5rem;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-right: 1rem;
+  border-radius: 50%;
+  transition: 0.3s all;
+  background: #219de1;
+}
+
+.social-media-container a:hover{
+  border-color: #219de1;
+  color: #219de1;
+  background: #fff;
+}
